@@ -1,0 +1,25 @@
+{
+  "name": "prototype",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "postcss css/tailwind.css -o  public/build/tailwind.css --watch",
+    "format": "prettier --write 'public/**/*.html'",
+    "serve": "npx live-server public"
+  },
+  "keywords": [],
+  "author": "Ken Feliciano <kafeliciano@gmail.com> (https://koamar.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "postcss-cli": "^8.3.0",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "stylelint": "^13.8.0",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
